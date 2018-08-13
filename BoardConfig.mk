@@ -25,8 +25,6 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 # Kernel
 TARGET_KERNEL_CONFIG := mido_defconfig
-TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := 7.0.1
 
 # Lineage Hardware
 BOARD_HARDWARE_CLASS += \
@@ -40,6 +38,9 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 872415232
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
+
+# Enable real time lockscreen charging current values
+BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
