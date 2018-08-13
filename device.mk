@@ -52,8 +52,4 @@ PRODUCT_PACKAGES += \
     rcs_service_api \
     rcs_service_api.xml
 
-# Validus Stuff
-PRODUCT_PACKAGES += \
-    Snap \
-    SoundRecorder \
-    BlockedNumberProvider 
+
